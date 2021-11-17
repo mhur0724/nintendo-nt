@@ -1,0 +1,147 @@
+:root {
+  --button-bg-color: #e60012;
+  --font-color-primary: #484848;
+  --button-border-radius: 0.3125em;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--font-color-primary);
+}
+
+section {
+  border-bottom: 1px solid gray;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 1rem auto 1.5rem auto;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav__ul__li {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.top-nav__ul__li i {
+  margin-right: 0.5rem;
+}
+
+.logo {
+  width: 4.5rem;
+
+  margin: 1rem;
+}
+
+.top img {
+  height: 11.25rem;
+  width: auto;
+}
+
+.top__text h3 {
+  margin-bottom: 1rem;
+}
+
+.explore-gaming-systems__div > * {
+  margin: 0.5rem;
+}
+.explore-gaming-systems img {
+  width: 100%;
+}
+
+.holiday-gift-guide__div {
+  color: white;
+  background-image: url(images/background-image-1.avif);
+}
+
+.holiday-gift-guide__div > * {
+  margin: 3rem;
+}
+
+.holiday-gift-guide__div img {
+  width: 100%;
+  margin: 2rem auto;
+}
+.holiday-gift-guide__div button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: var(--button-border-radius);
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 2rem auto;
+  margin-bottom: 1.5rem;
+}
+
+.holiday-gift-guide h3 {
+  width: 80%;
+  margin: 0 auto;
+}
+.holiday-gift-guide button p {
+  display: inline;
+  font-size: 1.125rem;
+}
+
+.shop-by-character__items {
+  display: grid;
+  grid: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-template-areas:
+    "mario link-zelda"
+    "animal-crossing kirby";
+  grid-gap: 1rem;
+}
+
+.shop-by-character img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+.mario {
+  background-image: url("images/mario-bg.avif");
+  grid-area: mario;
+}
+.link-zelda {
+  background-image: url("images/link-zelda-bg.avif");
+  grid-area: link-zelda;
+}
+.animal-crossing {
+  background-image: url("images/animal-crossing-bg.jfif");
+  grid-area: animal-crossing;
+}
+.kirby {
+  background-image: url("images/kirby-bg.avif");
+  grid-area: kirby;
+}
+
+/* class settings */
+.hidden {
+  display: none;
+}
+
+.button-style {
+  background: var(--button-bg-color);
+  color: white;
+  border: none;
+  border-radius: var(--button-border-radius);
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 1.5rem auto;
+}
