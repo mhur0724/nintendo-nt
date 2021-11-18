@@ -25,7 +25,6 @@ section div {
   flex-direction: column;
   text-align: center;
   font-size: 1.25rem;
-  margin: 1rem auto 1.5rem auto;
 }
 .top-nav {
   display: flex;
@@ -77,6 +76,7 @@ section div {
   width: 100%;
   margin: 2rem auto;
 }
+
 .holiday-gift-guide__div button {
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -93,12 +93,13 @@ section div {
   width: 80%;
   margin: 0 auto;
 }
+
 .holiday-gift-guide button p {
   display: inline;
   font-size: 1.125rem;
 }
 
-.shop-by-character__items {
+.shop-by-character__items__grid {
   display: grid;
   grid: repeat(2, 1fr) / repeat(2, 1fr);
   grid-template-areas:
@@ -107,12 +108,25 @@ section div {
   grid-gap: 1rem;
 }
 
+.shop-by-character__item h2 {
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 1rem 0;
+  font-weight: 550;
+}
+
+.shop-by-character__items p {
+  font-size: 0.75rem;
+  text-align: left;
+  line-height: 1.5rem;
+}
 .shop-by-character img {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   border-radius: 10px;
 }
+
 .mario {
   background-image: url("images/mario-bg.avif");
   grid-area: mario;
