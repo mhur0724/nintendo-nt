@@ -2,6 +2,7 @@
   --button-bg-color: #e60012;
   --font-color-primary: #484848;
   --button-border-radius: 0.3125em;
+  --border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 *,
 *::before,
@@ -11,13 +12,24 @@
   padding: 0;
 }
 
+.button-style {
+  background: var(--button-bg-color);
+  color: white;
+  border: none;
+  border-radius: var(--button-border-radius);
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--font-color-primary);
 }
 
 section {
-  border-bottom: 1px solid gray;
+  border-bottom: var(--border-bottom);
 }
 
 section div {
@@ -25,6 +37,7 @@ section div {
   flex-direction: column;
   text-align: center;
   font-size: 1.25rem;
+  margin: 3rem auto;
 }
 .top-nav {
   display: flex;
@@ -41,10 +54,13 @@ section div {
   margin-right: 0.5rem;
 }
 
+.top-nav__left {
+  background: #e4000f;
+}
+
 .logo {
   width: 4.5rem;
-
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .top img {
@@ -52,24 +68,70 @@ section div {
   width: auto;
 }
 
-.top__text h3 {
-  margin-bottom: 1rem;
+.top__text {
+  margin: auto 0.5rem;
+}
+.top__text > * {
+  margin: 1rem auto 0rem;
 }
 
-.explore-gaming-systems__div > * {
-  margin: 0.5rem;
+.top__text {
+  font-size: 1rem;
 }
+
+.top-div {
+  margin-top: 0rem;
+}
+
+.other-games__div {
+  margin: 3rem;
+}
+
+.game-store__div {
+  background-image: url("https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/color?v=2021111617");
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 3rem 0;
+}
+
+.game-store__div p {
+  margin: 2rem;
+}
+
+.game-store button {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.game-store img {
+  width: 19rem;
+  margin: 0 auto;
+}
+
+.game-store i {
+  margin-left: 1rem;
+}
+
+.explore-gaming-systems {
+  margin: 3rem 0;
+}
+
 .explore-gaming-systems img {
+  margin: 1.5rem auto;
   width: 100%;
+}
+
+.explore-gaming-systems button {
+  margin: 1.5rem auto 0rem;
 }
 
 .holiday-gift-guide__div {
   color: white;
-  background-image: url(images/background-image-1.avif);
+  background-image: url("https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Special-Event-Banners/HGG2021/Pattern_sparklered_200x200?v=2021111617");
 }
 
-.holiday-gift-guide__div > * {
-  margin: 3rem;
+.holiday-gift-guide__div {
+  margin-bottom: 3rem;
 }
 
 .holiday-gift-guide__div img {
@@ -79,14 +141,11 @@ section div {
 
 .holiday-gift-guide__div button {
   background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  border-radius: var(--button-border-radius);
-  padding: 0.75rem;
-  font-size: 1.125rem;
-  font-weight: 600;
   margin: 2rem auto;
-  margin-bottom: 1.5rem;
+}
+
+.holiday-gift-guide__div i {
+  margin-left: 1rem;
 }
 
 .holiday-gift-guide h3 {
@@ -99,19 +158,54 @@ section div {
   font-size: 1.125rem;
 }
 
+.news__div__top__item {
+  text-align: left;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.news__div__top__item img {
+  width: 100%;
+}
+
+.news__div__top__item h2 {
+  font-size: 1.125rem;
+}
+.news__div__top__item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #484848;
+}
+
+.news__div__bottom__item {
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.news__div__bottom__item img {
+  width: 100%;
+}
+.shop-by-character__items {
+  margin: 3rem 0.5rem;
+}
+
 .shop-by-character__items__grid {
   display: grid;
   grid: repeat(2, 1fr) / repeat(2, 1fr);
   grid-template-areas:
     "mario link-zelda"
     "animal-crossing kirby";
-  grid-gap: 1rem;
+  grid-gap: 2rem;
+}
+
+.shop-by-character__item {
+  margin: 0;
 }
 
 .shop-by-character__item h2 {
   font-size: 1.25rem;
   text-align: left;
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   font-weight: 550;
 }
 
@@ -128,34 +222,126 @@ section div {
 }
 
 .mario {
-  background-image: url("images/mario-bg.avif");
+  background-image: url("https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/mario-bg?v=2021052718");
   grid-area: mario;
 }
 .link-zelda {
-  background-image: url("images/link-zelda-bg.avif");
+  background-image: url("https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/zelda-bg?v=2021052718");
   grid-area: link-zelda;
 }
 .animal-crossing {
-  background-image: url("images/animal-crossing-bg.jfif");
+  background-image: url("https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Animal_Crossing_A_background?v=2021052718");
   grid-area: animal-crossing;
 }
 .kirby {
-  background-image: url("images/kirby-bg.avif");
+  background-image: url("https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Kirby_B_background?v=2021052718");
   grid-area: kirby;
+}
+
+.bottom__items {
+  margin: 0;
+}
+
+.bottom__item,
+.change-region {
+  margin: 0;
+  width: 100%;
+}
+.bottom__item__h2 {
+  padding: 1rem;
+  border-bottom: var(--border-bottom);
+  margin: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #1660a0;
+  background: white;
+}
+
+.bottom__item i {
+  margin: auto 0;
+}
+
+.bottom__item ul {
+  padding: 1rem;
+  border-bottom: var(--border-bottom);
+}
+
+.bottom__item li {
+  list-style-type: none;
+  padding: 0.75rem 0;
+  text-align: left;
+  color: #484848;
+}
+
+footer {
+  background: linear-gradient(to bottom, #3c3a3a 0, #484848 50%);
+  color: white;
+  text-align: center;
+}
+
+.footer__div {
+  padding: 1rem 2rem;
+}
+
+.footer__div > * {
+  margin: 0.5rem;
+}
+footer p {
+  display: inline-block;
+  opacity: 0.75;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem auto;
+}
+
+.fab {
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.fa-facebook {
+  background: #1778f2;
+}
+
+.fa-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.fa-twitter {
+  background: #00acee;
+}
+
+.fa-youtube {
+  background: #e60012;
+}
+
+.privacy-certified {
+  width: 4rem;
+}
+
+.footer__tag {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
 }
 
 /* class settings */
 .hidden {
   display: none;
-}
-
-.button-style {
-  background: var(--button-bg-color);
-  color: white;
-  border: none;
-  border-radius: var(--button-border-radius);
-  padding: 0.75rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin: 1.5rem auto;
 }
