@@ -83,8 +83,100 @@ section div {
   margin-top: 0rem;
 }
 
-.other-games__div {
-  margin: 3rem;
+.available-now__div,
+.trending-games__div,
+.new-releases__div {
+  margin: 3rem 1rem;
+}
+
+.available-now__ul,
+.trending-games__ul,
+.new-releases__ul {
+  display: flex;
+  text-align: left;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.available-now__ul li,
+.trending-games__div li,
+.new-releases__div li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.available-now__ul li > *,
+.trending-games__ul li > *,
+.new-releases__ul li > * {
+  margin: 1rem 0;
+}
+.available-now__ul img,
+.trending-games__ul img,
+.new-releases__ul img {
+  width: 8.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0;
+}
+
+.available-now__ul li h2,
+.trending-games__ul li h2,
+.new-releases__ul li h2 {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.available-now__ul li p,
+.trending-games__ul li p:last-child,
+.new-releases__ul li p:last-child {
+  color: #484848;
+  font-weight: 100;
+  font-size: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom-style: solid;
+  border-bottom-color: var(--button-bg-color);
+  width: fit-content;
+}
+
+.trending-games__date,
+.new-releases__date {
+  color: #484848;
+  font-size: 0.9rem;
+}
+
+.news__ul__top {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.news__ul__top li > * {
+  margin: 1rem 0;
+}
+.news__ul__top img {
+  width: 100%;
+}
+
+.news__ul__top p {
+  font-size: 1rem;
+  color: #484848;
+  opacity: 0.8;
+}
+
+.news__ul__top h2 {
+  font-size: 1.125rem;
+}
+.news__ul__bottom img {
+  width: 8.5rem;
+  height: auto;
+}
+
+.news__ul__bottom h2 {
+  font-size: 1.125rem;
+}
+
+.news__ul li {
+  list-style-type: none;
 }
 
 .game-store__div {
@@ -93,6 +185,7 @@ section div {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 3rem 0;
+  padding: 1rem 0;
 }
 
 .game-store__div p {

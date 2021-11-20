@@ -1,0 +1,21 @@
+[
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero",
+    "date": "11/19/21",
+    "title": "Pokemon Brilliant Diamond",
+    "price": "$59.99"
+  },
+
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_CA/games/switch/g/grand-theft-auto-the-trilogy-the-definitive-edition-switch/hero",
+    "date": "11/11/21",
+    "title": "Grand Theft Auto: The Trilogy - The Definitive Edition",
+    "price": "$59.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/m/mario-party-superstars-switch/hero",
+    "date": "10/29/21",
+    "title": "Mario Party Superstars",
+    "price": "$59.99"
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-and-pokemon-shining-pearl-double-pack-switch/hero?v=2021111923",
+    "date": "11/19/21",
+    "title": "Pokemon Brillant Diamon and Pokemon Shining Pearl Double Pack",
+    "price": "$119.99"
+  },
+
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/r/ruined-king-a-league-of-legends-story-switch/hero?v=2021111923",
+    "date": "11/16/21",
+    "title": "Ruined King: A League of Legends Story",
+    "price": "$29.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/j/just-dance-2022-switch/hero?v=2021111923",
+    "date": "11/04/21",
+    "title": "Just Dance 2022",
+    "price": "$49.99"
+  }
+]
