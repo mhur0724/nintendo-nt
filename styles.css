@@ -39,6 +39,7 @@ section div {
   font-size: 1.25rem;
   margin: 3rem auto;
 }
+
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -58,6 +59,50 @@ section div {
   background: #e4000f;
 }
 
+.hamburger {
+  position: relative;
+  display: block;
+  width: 1.5rem;
+  cursor: pointer;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  margin: 0 1rem;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #484848;
+  transition: 0.4s;
+}
+
+.hamburger:before {
+  transform: translateY(-0.25rem);
+}
+
+.hamburger:after {
+  transform: translateY(0.25rem);
+}
+
+.hamburger.open .bar {
+  background: transparent;
+}
+
+.hamburger.open:before {
+  transform-origin: center;
+  transform: translateY(0.125rem) rotate(45deg);
+}
+.hamburger.open:after {
+  transform-origin: center;
+  transform: translateY(-0.125rem) rotate(-45deg);
+}
 .logo {
   width: 4.5rem;
   margin: 0.5rem;
@@ -166,9 +211,29 @@ section div {
 .news__ul__top h2 {
   font-size: 1.125rem;
 }
+
+.news__ul__bottom li {
+  display: grid;
+  grid-template-columns: 1fr 1.75fr;
+  grid-auto-rows: 20% 80%;
+  grid-template-areas:
+    "image date"
+    "image title";
+  text-align: left;
+  padding: 0 0.5rem;
+  grid-gap: 1rem;
+}
+
+.news__ul__bottom li p {
+  grid-area: date;
+}
+
+.news__ul__bottom li h2 {
+  grid-area: title;
+}
 .news__ul__bottom img {
-  width: 8.5rem;
-  height: auto;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 .news__ul__bottom h2 {

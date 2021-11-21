@@ -5,6 +5,11 @@ let trendingGamesUl = document.querySelector(".trending-games__ul");
 let NewReleasesUl = document.querySelector(".new-releases__ul");
 let newsTopUl = document.querySelector(".news__ul__top");
 let newsBottomUl = document.querySelector(".news__ul__bottom");
+let hamburger = document.querySelector(".hamburger");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("open");
+});
 
 fetch("objects/AvailableNow.json")
   .then((response) => response.json())
