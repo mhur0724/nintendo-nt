@@ -21,6 +21,7 @@
   font-size: 1.125rem;
   font-weight: 600;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 body {
@@ -73,7 +74,7 @@ main {
 
 .top-nav__ul__li {
   display: flex;
-  margin-right: 1rem;
+  justify-content: flex-end;
 }
 
 .top-nav__ul__li i {
@@ -82,6 +83,10 @@ main {
 
 .top-nav__left {
   background: #e4000f;
+}
+
+.top-nav__right {
+  width: 100%;
 }
 
 .hamburger {
@@ -188,6 +193,9 @@ main {
   margin-top: 0rem;
 }
 
+.top__image__2 {
+  display: none;
+}
 .available-now__div,
 .trending-games__div,
 .new-releases__div {
@@ -218,7 +226,8 @@ main {
 .available-now__ul img,
 .trending-games__ul img,
 .new-releases__ul img {
-  width: 8.5rem;
+  max-height: 6.5rem;
+  width: auto;
   border-radius: 0.3rem;
   margin-bottom: 0;
 }
@@ -495,30 +504,54 @@ main {
 footer {
   background: linear-gradient(to bottom, #3c3a3a 0, #484848 50%);
   color: white;
-  text-align: center;
 }
 
 .footer__div {
-  padding: 1rem 2rem;
-}
-
-.footer__div > * {
-  margin: 0.5rem;
-}
-footer p {
-  display: inline-block;
-  opacity: 0.75;
-}
-
-.social-container {
   display: flex;
   flex-direction: column;
 }
 
-.social-icon {
+.footer__top {
   display: flex;
-  justify-content: space-around;
-  margin: 0.5rem auto;
+  flex-direction: column;
+
+  align-content: center;
+}
+
+.footer__top > * {
+  margin: 1rem;
+}
+.footer__top__left {
+  display: flex;
+  flex-direction: column;
+}
+.footer__top__left > * {
+  margin: 0.5rem;
+}
+.footer__contact__p {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__contact__social-icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__bottom {
+  text-align: center;
+
+  padding: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.75rem;
+}
+
+.footer__bottom > * {
+  margin: 0.5rem;
+}
+
+.footer__top img {
+  margin: 0rem auto 0.5rem;
 }
 
 .fab {
@@ -558,7 +591,89 @@ footer p {
   font-size: 0.75rem;
   line-height: 1.5rem;
 }
+@media (min-width: 379px) {
+  .footer__top {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 400px;
+  }
 
+  .footer__contact__p p {
+    margin: 0.5rem;
+  }
+
+  .footer__div img {
+    margin: auto 1rem auto 0;
+  }
+}
+@media (min-width: 429px) {
+  .button-style {
+    padding: 1.25rem 2rem;
+    font-size: 1.25rem;
+  }
+  .top-div img {
+    height: auto;
+  }
+  .top__image__1 {
+    display: none;
+  }
+  .top__image__2 {
+    display: block;
+  }
+
+  .top__text {
+    flex-direction: row;
+  }
+  .top__text button {
+    font-size: 1.25rem;
+    padding: 1rem 1.25rem;
+  }
+  .top__text h2 {
+    text-align: left;
+    width: 60%;
+  }
+  .holiday-gift-guide__div img {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 571px) {
+  .game-store__div,
+  .holiday-gift-guide__div {
+    flex-direction: row;
+  }
+
+  .game-store__div__text,
+  .holiday-gift-guide__div__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .game-store__div img,
+  .holiday-gift-guide__div img {
+    margin: auto 0;
+    height: 100%;
+  }
+
+  .news__ul__top {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .news__ul__top li {
+    flex: 1;
+    padding: 0.5rem;
+  }
+
+  .news__ul__bottom {
+    display: flex;
+  }
+
+  .news__ul__bottom li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* class settings */
 .hidden {
   display: none;
