@@ -1,5 +1,5 @@
 :root {
-  --button-bg-color: #e60012;
+  --nintendo-red: #e60012;
   --font-color-primary: #484848;
   --button-border-radius: 0.3125em;
   --border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -13,7 +13,7 @@
 }
 
 .button-style {
-  background: var(--button-bg-color);
+  background: var(--nintendo-red);
   color: white;
   border: none;
   border-radius: var(--button-border-radius);
@@ -160,7 +160,7 @@ main {
 }
 
 .bottom-nav__ul__li a:hover {
-  color: var(--button-bg-color);
+  color: var(--nintendo-red);
 }
 
 .logo {
@@ -238,7 +238,7 @@ main {
   font-size: 0.75rem;
   padding-bottom: 0.5rem;
   border-bottom-style: solid;
-  border-bottom-color: var(--button-bg-color);
+  border-bottom-color: var(--nintendo-red);
   width: fit-content;
 }
 
@@ -481,7 +481,6 @@ main {
 }
 
 .bottom__item ul {
-  display: none;
   padding: 1rem;
   border-bottom: var(--border-bottom);
 }
