@@ -6,9 +6,30 @@ let NewReleasesUl = document.querySelector(".new-releases__ul");
 let newsTopUl = document.querySelector(".news__ul__top");
 let newsBottomUl = document.querySelector(".news__ul__bottom");
 let hamburger = document.querySelector(".hamburger");
+let bottomNav = document.querySelector(".bottom-nav");
+let main = document.querySelector("main");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
+  bottomNav.classList.toggle("open");
+  main.classList.toggle("open");
+  document.getElementById("overlay").classList.toggle("open");
+});
+
+main.addEventListener("click", () => {
+  if (main.classList.contains("open")) {
+    hamburger.classList.toggle("open");
+    bottomNav.classList.toggle("open");
+    main.classList.toggle("open");
+    document.getElementById("overlay").classList.toggle("open");
+  }
+});
+
+bottomItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.lastElementChild.classList.toggle("hidden");
+    item.firstElementChild.lastElementChild.classList.toggle("fa-chevron-up");
+  });
 });
 
 fetch("objects/AvailableNow.json")
@@ -129,9 +150,3 @@ fetch("objects/News.json")
       newsBottomUl.appendChild(li);
     }
   });
-bottomItem.forEach((item) => {
-  item.addEventListener("click", () => {
-    item.lastElementChild.classList.toggle("hidden");
-    item.firstElementChild.lastElementChild.classList.toggle("fa-chevron-up");
-  });
-});
