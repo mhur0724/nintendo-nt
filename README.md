@@ -9,4 +9,5 @@ I also wanted to ensure that it was *somewhat* scaleable. You can see this speci
  
 I spent a solid 3 weeks on this project and I'm SUPER happy with the way it came out. If you have any feedback or advice on how to better format my code I'd love to hear it!
 
-Note: There are no actual links on any of the clickable items and the input field doesn't look up anything.
+**
+Note: There are no actual links on any of the clickable items and the input field doesn't look up anything.**
