@@ -17,5 +17,47 @@
     "date": "11/04/21",
     "title": "Just Dance 2022",
     "price": "$49.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/t/twitch-switch/hero?v=2021112221",
+    "date": "11/11/21",
+    "title": "Twitch",
+    "price": "Free"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/s/star-wars-knights-of-the-old-republic-switch/hero?v=2021112221",
+    "date": "11/11/21",
+    "title": "STAR WARS™: Knights of the Old Republic™",
+    "price": "$14.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/f/fatal-frame-maiden-of-black-water-switch/hero?v=2021112221",
+    "date": "10/28/21",
+    "title": "FATAL FRAME: Maiden of Black Water",
+    "price": "$39.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/E3/2021/Games/M_2_I83iGN8BPSTpu7/marvels-guardians-of-the-galaxy-cloud-version-switch/hero?v=2021112221",
+    "date": "10/26/21",
+    "title": "Marvel's Guardians of the Galaxy: Cloud Version",
+    "price": "$59.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/s/skul-the-hero-slayer-switch/hero?v=2021112221",
+    "date": "10/21/21",
+    "title": "Skul: The Hero Slayer",
+    "price": "$19.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/d/dying-light-platinum-edition-switch/hero?v=2021112221",
+    "date": "10/19/21",
+    "title": "Dying Light: Platinum Edition",
+    "price": "49.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/t/the-jackbox-party-pack-8-switch/hero?v=2021112221",
+    "date": "10/14/21",
+    "title": "The Jackbox Party Pack 8",
+    "price": "$29.99"
   }
 ]

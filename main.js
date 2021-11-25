@@ -98,6 +98,7 @@ fetch("objects/NewReleases.json")
       date.classList.add("trending-games__date");
 
       title.innerHTML = data[i].title;
+      date.style.fontSize = "1rem";
       price.innerHTML = data[i].price;
       p.innerHTML = "Nintendo Switch";
 

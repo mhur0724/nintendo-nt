@@ -17,17 +17,15 @@
       <div class="main-nav">
         <div class="top-nav">
           <div class="top-nav__left">
-            <a href="#">
+
               <img class="logo" src="images/logo.svg" alt="nintendo" />
-            </a>
-            <div class="input hidden">
-              <input
-                type="text"
-                placeholder="Search games, systems, support, etc."
-              />
-            </div>
+
+
           </div>
           <div class="top-nav__right">
+            <div class="input hidden">
+              <i class="fas fa-search"></i><input type="text" placeholder="Search games, systems, support, etc."/>
+            </div>
             <ul class="top-nav__ul">
               <li class="top-nav__ul__li hidden">
                 <i class="fas fa-question-circle"></i>
@@ -94,9 +92,11 @@
             <img class="top__image__1" src="https://assets.nintendo.com/image/upload/c_fill,f_auto,h_482,q_auto,w_856/ncom/en_US/merchandising/center-stage-banner/Pokemon%20Brilliant%20Diamond%20and%20Shining%20Pearl/Centerstages_Ncom_750x422_mobile_pokemon?v=2021111617" alt="pokemon" />
             <img class="top__image__2" src="https://assets.nintendo.com/image/upload/c_fill,f_auto,h_924,q_auto,w_2560/ncom/en_US/merchandising/center-stage-banner/Pokemon%20Brilliant%20Diamond%20and%20Shining%20Pearl/Centerstages_Ncom_1366x493_desktop_pokemon?v=2021112000" alt="pokemon" />
             <div class="top__text">
-            <h2>Pre-order digitally now-Play at launch</h2>
-            <button class="button-style">Learn more <i class="fas fa-chevron-right"></i></button>
-            <div class="top__rating hidden">
+              <div class="top__text__left">
+                <h2>Available Now</h2>
+                <button class="button-style">Learn more <i class="fas fa-chevron-right"></i></button>
+              </div>
+            <div class="top__rating">
                 <img src="images/top-rating.svg" alt="" />
                 <div class="top__rating__text">
                 <p>Mild Cartoon Violent</p>
@@ -120,7 +120,7 @@
         <div class="game-store__div">
           <img src="https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Game_Store_Switch_Games?v=2021111617" alt="">
           <div class="game-store__div__text">
-            <p>Game Store: Buy, download, and play right away!</p>
+            <h3>Game Store: Buy, download, and play right away!</h3>
             <button class="shop-games button-style">Shop games<i class="fas fa-chevron-right"></i></button>
           </div>
         </div>
@@ -177,22 +177,30 @@
 
         <div class="shop-by-character__items">
             <h2>Shop by Character</h2>
-                <div class="shop-by-character__items__grid">
+                <div class="shop-by-character__items__responsive">
                     <div class="shop-by-character__item">                          
-                        <img class="mario" src="https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/mario-fg?v=2021052718" alt="" />
-                        <h2>Mario&#8482;</h2>
+                        <a href="">
+                          <img class="mario" src="https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/mario-fg?v=2021052718" alt="" />
+                          <h2>Mario&#8482;</h2>
+                        </a>
                     </div>
                     <div class="shop-by-character__item">
-                        <img class="link-zelda" src="https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/zelda-fg?v=2021052718" alt="" />
-                        <h2>The Legend of Zelda&#8482;</h2>
+                        <a href="">
+                          <img class="link-zelda" src="https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/zelda-fg?v=2021052718" alt="" />
+                          <h2>The Legend of Zelda&#8482;</h2>
+                        </a>
                     </div>
                     <div class="shop-by-character__item">
-                        <img class="animal-crossing" src="https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Animal_Crossing_A_characters?v=2021052718" alt="" />
-                        <h2>Animal Crossing&#8482;</h2>
+                        <a href="">
+                          <img class="animal-crossing" src="https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Animal_Crossing_A_characters?v=2021052718" alt="" />
+                          <h2>Animal Crossing&#8482;</h2>
+                        </a>
                     </div>
                     <div class="shop-by-character__item">
-                        <img class="kirby" src="https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Kirby_B_character?v=2021052718" alt="" />
-                        <h2>Kirby&#8482;</h2>
+                        <a href="">
+                          <img class="kirby" src="https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Kirby_B_character?v=2021052718" alt="" />
+                          <h2>Kirby&#8482;</h2>
+                        </a>
                     </div>
                 </div>
             <p>
@@ -205,88 +213,134 @@
 
       <section class="bottom">
         <div class="bottom__items">
-          <div class="bottom__item">
+          <div class="bottom__item about-nintendo">
               <div class="bottom__item__h2">
                   <h2>About Nintendo</h2>
                   <i class="fas fa-chevron-down"></i>
               </div>   
             <ul class="hidden">
-              <li>Company Info</li>
-              <li>Careers</li>
-              <li>CSR Report</li>
-              <li>IP Policy</li>
-              <li>Sitemap</li>
+              <a href="">
+                <li>Company Info</li>
+              </a>
+              <a href="">
+                <li>Careers</li>
+              </a>
+              <a href="">
+                <li>CSR Report</li>
+              </a>
+              <a href="">
+                <li>IP Policy</li>
+              </a>
+              <a href="">
+                <li>Sitemap</li>
+              </a>
             </ul>
           </div>
-          <div class="bottom__item">
+          <div class="bottom__item where-to-buy">
               <div class="bottom__item__h2">
                   <h2>Where to Buy</h2>
                   <i class="fas fa-chevron-down"></i>
               </div>  
             <ul class="hidden">
-              <li>Game Store</li>
-              <li>Nintendo NY</li>
-              <li>Nintendo Store</li>
-              <li>Online Retailers</li>
+              <a href="">
+                <li>Game Store</li>
+              </a>
+              <a href="">
+                <li>Nintendo NY</li>
+              </a>
+              <a href="">
+                <li>Nintendo Store</li>
+              </a>
+              <a href="">
+                <li>Online Retailers</li>
+              </a>
             </ul>
           </div>
-          <div class="bottom__item">
+          <div class="bottom__item support">
                   <div class="bottom__item__h2">
                   <h2>Support</h2>
                   <i class="fas fa-chevron-down"></i>
               </div>  
             <ul class="hidden">
-              <li>Health & Safety Precautions</li>
-              <li>Warranty</li>
-              <li>Nintendo Switch</li>
-              <li>Nintendo 3DS</li>
-              <li>Repair</li>
-              <li>Nintendo Product Recycling</li>
+              <a href="">
+                <li>Health & Safety Precautions</li>
+              </a>
+              <a href="">
+                <li>Warranty</li>
+              </a>
+              <a href="">
+                <li>Nintendo Switch</li>
+              </a>
+              <a href="">
+                <li>Nintendo 3DS</li>
+              </a>
+              <a href="">
+                <li>Repair</li>
+              </a>
+              <a href="">
+                <li>Nintendo Product Recycling</li>
+              </a>
             </ul>
           </div>
-          <div class="bottom__item">
+          <div class="bottom__item parents">
               <div class="bottom__item__h2">
                   <h2>Parents</h2>
                   <i class="fas fa-chevron-down"></i>
               </div>  
             <ul class="hidden">
-
-              <li>Info for Parents</li>
-              <li>Parental Controls</li>
+<a href="">
+  
+                <li>Info for Parents</li>
+</a>
+              <a href="">
+                <li>Parental Controls</li>
+              </a>
 
             </ul>
           </div>
-          <div class="bottom__item">
+          <div class="bottom__item community">
               <div class="bottom__item__h2">
                   <h2>Community</h2>
                   <i class="fas fa-chevron-down"></i>
               </div>  
             <ul class="hidden">
 
-              <li>Community Guidelines</li>
-              <li>Online Safety Principles</li>
+              <a href="">
+                <li>Community Guidelines</li>
+              </a>
+              <a href="">
+                <li>Online Safety Principles</li>
+              </a>
             </ul>
           </div>
-          <div class="bottom__item">
+          <div class="bottom__item privacy">
               <div class="bottom__item__h2">
                   <h2>Privacy</h2>
                   <i class="fas fa-chevron-down"></i>
               </div>  
             <ul class="hidden">
 
-              <li>Privacy Policy</li>
-              <li>Cookies and Interest-Based ads</li>
+              <a href="">
+                <li>Privacy Policy</li>
+              </a>
+              <a href="">
+                <li>Cookies and Interest-Based ads</li>
+              </a>
             </ul>
           </div>
-          <div class="bottom__item">
+          <div class="bottom__item legal">
                     <div class="bottom__item__h2">
                   <h2>Legal</h2>
                   <i class="fas fa-chevron-down"></i>
               </div>  
             <ul class="hidden">
 
-              <li>Documents and Policies</li>
-              <li>Terms of Use</li>
+              <a href="">
+                <li>Documents and Policies</li>
+              </a>
+              <a href="">
+                <li>Terms of Use</li>
+              </a>
 
             </ul>
           </div>

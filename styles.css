@@ -24,6 +24,10 @@
   cursor: pointer;
 }
 
+.button-style:active {
+  transform: scale(0.9);
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--font-color-primary);
@@ -62,7 +66,6 @@ main {
 }
 .top-nav {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -70,19 +73,34 @@ main {
   background: white;
   width: 100%;
   height: 2.75rem;
+  border-bottom: var(--border-bottom);
 }
 
 .top-nav__ul__li {
+  cursor: pointer;
   display: flex;
   justify-content: flex-end;
+  margin-right: 1rem;
+  flex-wrap: nowrap;
 }
 
 .top-nav__ul__li i {
   margin-right: 0.5rem;
 }
 
+.top-nav__ul__li:hover {
+  color: var(--nintendo-red);
+}
 .top-nav__left {
+  display: flex;
   background: #e4000f;
+  height: 100%;
+}
+
+.logo {
+  cursor: pointer;
+  width: 4.5rem;
+  margin: 0 0.5rem;
 }
 
 .top-nav__right {
@@ -99,7 +117,7 @@ main {
   background: none;
   outline: none;
   border: none;
-  margin: 0 1rem;
+  margin-right: 1rem;
 }
 
 .hamburger .bar,
@@ -150,6 +168,9 @@ main {
 .bottom-nav.open {
   right: 0;
 }
+.bottom-nav__ul {
+  height: 100%;
+}
 .bottom-nav__ul__li {
   list-style-type: none;
   display: block;
@@ -168,16 +189,14 @@ main {
   color: var(--nintendo-red);
 }
 
-.logo {
-  width: 4.5rem;
-  margin: 0.5rem;
-}
-
 .top img {
   height: 11.25rem;
   width: auto;
 }
 
+.top-div {
+  margin-top: 0rem;
+}
 .top__text {
   margin: auto 0.5rem;
 }
@@ -189,11 +208,15 @@ main {
   font-size: 1rem;
 }
 
-.top-div {
-  margin-top: 0rem;
+.top__image__2 {
+  display: none;
 }
 
-.top__image__2 {
+.top__text__left > * {
+  margin: 1rem;
+}
+
+.top__rating {
   display: none;
 }
 .available-now__div,
@@ -216,6 +239,7 @@ main {
 .new-releases__div li {
   list-style-type: none;
   margin: 0 1rem;
+  max-width: 15rem;
 }
 
 .available-now__ul li > *,
@@ -226,8 +250,10 @@ main {
 .available-now__ul img,
 .trending-games__ul img,
 .new-releases__ul img {
-  max-height: 6.5rem;
-  width: auto;
+  cursor: pointer;
+  width: 60vw;
+  max-width: 15rem;
+  height: auto;
   border-radius: 0.3rem;
   margin-bottom: 0;
 }
@@ -235,8 +261,15 @@ main {
 .available-now__ul li h2,
 .trending-games__ul li h2,
 .new-releases__ul li h2 {
+  cursor: pointer;
   line-height: 1.5;
   font-size: 1rem;
+}
+
+.available-now__ul li h2:hover,
+.trending-games__ul li h2:hover,
+.new-releases__ul li h2:hover {
+  color: var(--nintendo-red);
 }
 
 .available-now__ul li p,
@@ -244,7 +277,7 @@ main {
 .new-releases__ul li p:last-child {
   color: #484848;
   font-weight: 100;
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding-bottom: 0.5rem;
   border-bottom-style: solid;
   border-bottom-color: var(--nintendo-red);
@@ -255,6 +288,21 @@ main {
 .new-releases__date {
   color: #484848;
   font-size: 0.9rem;
+}
+
+.news__ul img,
+.news__ul h2 {
+  cursor: pointer;
+}
+
+.news__ul h2:hover {
+  color: var(--nintendo-red);
+}
+
+.news__ul p {
+  font-size: 1rem;
+  color: #484848;
+  opacity: 0.8;
 }
 
 .news__ul__top {
@@ -269,12 +317,6 @@ main {
 }
 .news__ul__top img {
   width: 100%;
-}
-
-.news__ul__top p {
-  font-size: 1rem;
-  color: #484848;
-  opacity: 0.8;
 }
 
 .news__ul__top h2 {
@@ -314,15 +356,18 @@ main {
 }
 
 .game-store__div {
+  display: flex;
+
   background-image: url("https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/color?v=2021111617");
   color: white;
   font-size: 1.4rem;
   font-weight: 600;
-  margin: 3rem 0;
+  margin: 3rem auto;
   padding: 1rem 0;
+  max-width: 68.75rem;
 }
 
-.game-store__div p {
+.game-store__div h3 {
   margin: 2rem;
 }
 
@@ -340,7 +385,8 @@ main {
 }
 
 .explore-gaming-systems {
-  margin: 3rem 0;
+  max-width: 68.75rem;
+  margin: 3rem auto;
 }
 
 .explore-gaming-systems img {
@@ -355,10 +401,9 @@ main {
 .holiday-gift-guide__div {
   color: white;
   background-image: url("https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Special-Event-Banners/HGG2021/Pattern_sparklered_200x200?v=2021111617");
-}
-
-.holiday-gift-guide__div {
   margin-bottom: 3rem;
+
+  max-width: 68.75rem;
 }
 
 .holiday-gift-guide__div img {
@@ -385,6 +430,9 @@ main {
   font-size: 1.125rem;
 }
 
+.news__div {
+  max-width: 68.75rem;
+}
 .news__div__top__item {
   text-align: left;
   width: 100%;
@@ -412,11 +460,18 @@ main {
 .news__div__bottom__item img {
   width: 100%;
 }
+
+.shop-by-character {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 .shop-by-character__items {
   margin: 3rem 0.5rem;
+  max-width: 67.85rem;
 }
 
-.shop-by-character__items__grid {
+.shop-by-character__items__responsive {
   display: grid;
   grid: repeat(2, 1fr) / repeat(2, 1fr);
   grid-template-areas:
@@ -427,6 +482,11 @@ main {
 
 .shop-by-character__item {
   margin: 0;
+}
+
+.shop-by-character__item a {
+  text-decoration: none;
+  color: #484848;
 }
 
 .shop-by-character__item h2 {
@@ -464,9 +524,12 @@ main {
   background-image: url("https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Kirby_B_background?v=2021052718");
   grid-area: kirby;
 }
-
+.bottom {
+  background: linear-gradient(to top, #e7e7e7 0, #f9f9f9 75%);
+}
 .bottom__items {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 68.75rem;
 }
 
 .bottom__item,
@@ -475,6 +538,7 @@ main {
   width: 100%;
 }
 .bottom__item__h2 {
+  cursor: pointer;
   padding: 1rem;
   border-bottom: var(--border-bottom);
   margin: 0;
@@ -499,6 +563,14 @@ main {
   padding: 0.75rem 0;
   text-align: left;
   color: #484848;
+}
+.bottom__item a {
+  text-decoration: none;
+}
+
+.bottom__item li:hover {
+  text-decoration: underline;
+  color: blue;
 }
 
 footer {
@@ -630,7 +702,6 @@ footer {
   }
   .top__text h2 {
     text-align: left;
-    width: 60%;
   }
   .holiday-gift-guide__div img {
     width: 20rem;
@@ -674,7 +745,240 @@ footer {
     flex-direction: column;
   }
 }
-/* class settings */
+
+@media (min-width: 697px) {
+  .top__text {
+    display: flex;
+
+    max-width: 50rem;
+    margin: 3rem auto 0rem;
+  }
+  .top__text__left {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    width: 100%;
+  }
+  .top__text__left {
+    flex: 1;
+  }
+
+  .top__text__left h2 {
+    text-align: center;
+  }
+  .top__text__left button {
+    min-width: 11rem;
+  }
+
+  .top__rating {
+    display: flex;
+    flex-direction: row;
+  }
+  .top__rating > * {
+    margin: 0.5rem;
+  }
+
+  .top__rating img {
+    width: 4rem;
+    padding: 0.5rem;
+  }
+
+  .top__rating__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+  .top__rating__text p {
+    padding: 0.5rem 0;
+  }
+  .top__rating__text p:first-child {
+    border-bottom: 3px solid black;
+  }
+}
+
+@media (min-width: 769px) {
+  .top-nav {
+    height: 3.375rem;
+    width: 100%;
+  }
+
+  .top-nav__right {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input.hidden {
+    display: block;
+    margin-left: 1rem;
+    border-bottom: 1px solid black;
+  }
+
+  .input:hover {
+    color: var(--nintendo-red);
+    border-bottom: 1px solid vaR(--nintendo-red);
+  }
+
+  .input:hover input::placeholder {
+    color: var(--nintendo-red);
+  }
+
+  .input input {
+    padding: 0.75rem;
+    width: 25rem;
+    border: none;
+  }
+  .input input:focus {
+    outline: none;
+  }
+
+  .top-nav__ul {
+    display: flex;
+    justify-self: flex-end;
+    margin: auto 0;
+  }
+
+  .top-nav__ul__li {
+    flex-shrink: 0;
+  }
+  .top-nav__ul__li.hidden {
+    display: flex;
+  }
+
+  .holiday-gift-guide__div__text,
+  .game-store__div__text {
+    flex-direction: row;
+  }
+  .holiday-gift-guide__div__text button,
+  .game-store__div__text button {
+    min-width: fit-content;
+    height: fit-content;
+    margin: auto 1rem;
+  }
+  .shop-by-character__items__responsive {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .shop-by-character {
+    border-bottom: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .bottom-nav {
+    position: relative;
+    left: 0;
+    min-height: 0;
+    height: fit-content;
+    width: 100%;
+    top: 3.375rem;
+    padding-top: 0px;
+    background: white;
+
+    padding: 0.5rem;
+  }
+
+  .bottom-nav__ul {
+    display: flex;
+    justify-content: center;
+  }
+  .bottom-nav ul a {
+    display: flex;
+  }
+  .bottom-nav ul a > * {
+    margin-left: 0.75rem;
+  }
+
+  .bottom-nav__ul__li {
+    margin-bottom: 0;
+    margin-left: 1rem;
+    padding: 0;
+  }
+
+  .bottom__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto auto auto;
+    gap: 2rem;
+    padding: 2rem 1rem 1rem 1rem;
+    grid-template-areas:
+      "about-nintendo where-to-buy support"
+      "parents community privacy"
+      ". . legal"
+      "change-region . .";
+  }
+  .bottom__item__h2:hover,
+  .bottom__item li:hover {
+    color: #484848;
+  }
+  .about-nintendo {
+    grid-area: about-nintendo;
+  }
+  .where-to-buy {
+    grid-area: where-to-buy;
+  }
+  .support {
+    grid-area: support;
+  }
+  .parents {
+    grid-area: parents;
+  }
+  .community {
+    grid-area: community;
+  }
+  .privacy {
+    grid-area: privacy;
+  }
+  .legal {
+    margin-top: 2rem;
+    grid-area: legal;
+  }
+  .change-region {
+    grid-area: change-region;
+  }
+  .bottom__item__h2 i {
+    display: none;
+  }
+  ul.hidden {
+    display: block;
+  }
+  .bottom__item__h2,
+  .bottom__item ul {
+    border-bottom: none;
+  }
+
+  .bottom__item__h2 {
+    padding: 0;
+    margin-bottom: 1rem;
+    color: #484848;
+    font-size: 0.75rem;
+    background: none;
+  }
+  .bottom__item ul {
+    padding: 0;
+  }
+  .bottom__item ul li {
+    padding-top: 0;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 1025px) {
+  .bottom__items {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 3rem 1rem 1rem 1rem;
+    grid-template-areas:
+      "about-nintendo where-to-buy support parents community privacy"
+      ". . . . . legal"
+      "change-region . . . . .";
+  }
+}
+
 .hidden {
   display: none;
 }

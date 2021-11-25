@@ -17,5 +17,48 @@
     "date": "10/29/21",
     "title": "Mario Party Superstars",
     "price": "$59.99"
+  },
+
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/hero",
+    "date": "3/20/20",
+    "title": "Animal Crossing™: New Horizons",
+    "price": "$59.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/r/ruined-king-a-league-of-legends-story-switch/hero",
+    "date": "11/16/21",
+    "title": "Ruined King: A League of Legends Story™",
+    "price": "$29.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-legends-arceus-switch/hero",
+    "date": "1/28/22",
+    "title": "Pokémon™ Legends: Arceus",
+    "price": "$59.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/u/unpacking-switch/hero",
+    "date": "11/02/21",
+    "title": "Unpacking",
+    "price": "$19.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/t/the-world-ends-with-you-final-remix-switch/the-world-ends-with-you-final-remix-switch-hero",
+    "date": "10/12/18",
+    "title": "The World Ends with You®: Final Remix",
+    "price": "$34.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/m/minecraft-switch/hero",
+    "date": "06/20/18",
+    "title": "Minecraft",
+    "price": "$29.99"
+  },
+  {
+    "image": "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/o/overcooked-2-switch/hero",
+    "date": "08/07/18",
+    "title": "Overcooked! 2",
+    "price": "$24.99"
   }
 ]
