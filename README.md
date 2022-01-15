@@ -1,4 +1,4 @@
-﻿# nintendo-nt
+﻿# Nintendo-nt
  
 <div id="top"></div>
 
@@ -15,7 +15,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h3 align="center">Pokedex</h3>
 
   <p align="center">
 A clone of Nintendo's landing page that uses HTML, CS, and some JavaSCript. It is a fully responsive website designed with a mobile-first approach. 
